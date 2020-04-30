@@ -79,7 +79,12 @@ ul.login-list {
   padding-top: 10px; }
 
 a.search-icon {
-  color: #fff; }
+  color: #fff;
+  text-decoration: none;}
+
+a.search-icon:hover {
+  text-decoration: none;
+}
 
 nav {
   font-size: 18px;
@@ -369,11 +374,12 @@ img {
   }
 
   .three {
-    margin-left: 50px
+    margin-left: 90px
   }
 
   .boxx .three{
-      margin-top: 6%;
+      margin-top: 15px;
+
   }
   .three .one{
       width: 90%;
@@ -456,6 +462,10 @@ img {
       margin: auto;
       margin-bottom: 20px;
   }
+
+  img.shift {
+    margin: 0 20px;
+  }
   .box2 .fa-comment{
       font-size: 30px;
       margin-top: -10px;
@@ -506,9 +516,7 @@ img {
       text-decoration: none;
       color: rgb(48, 177, 228);
   }
-  a:hover{
-      border-bottom: 1px solid rgb(48, 177, 228);
-  }
+
   .box3 .fa-newspaper{
       color: rgb(48, 177, 228);
       font-size: 20px;
@@ -639,7 +647,6 @@ img {
       border: none;
       background: inherit;
       color: #fff;
-      cursor: pointer;
   }
 
   button.pro:focus {
@@ -699,17 +706,20 @@ img {
     padding-left: 10px; }
     .menu-container a.menu2 {
       display: none;
-      position: absolute; }
+      position: absolute;
+      margin-left: 10px;}
 
   p.menu-text {
     display: inline-block;
     font-size: 18px;
-    margin-top: -5px;
-    display: none; }
+    /* margin-top: -5px; */
+    display: none;
+    font-weight: 700;
+    margin-left: -10px;}
 
   nav.navbar.responsive ul.navbar-list {
     flex-direction: column;
-    width: 150px;
+    width: 160px;
     margin-left: -20px;
     background: rgba(0, 0, 0, 0.75);
     height: auto;
@@ -718,7 +728,8 @@ img {
     position: absolute;
     z-index: 1;
     padding-left: 20px;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    padding-top: 10px;}
 
   @-webkit-keyframes slide2 {
     from {
@@ -743,15 +754,21 @@ img {
     nav.navbar.responsive ul.navbar-list li.dropDown button.drop-btn,
     nav.navbar.responsive ul.navbar-list li.dropDown2 button.drop-btn {
       background: transparent;
-      font-weight: 400;
-      margin-bottom: 15px; }
+      font-weight: 700;
+      margin-bottom: 15px;
+      margin-top: 10px;
+      }
+
+    nav.navbar.responsive ul.navbar-list li.dropDown button.drop-btn.top {
+      margin-top: 0;
+    }
   nav.navbar.responsive ul.navbar-list li.nav-list-item {
-    position: relative;
+    /* position: relative; */
     top: 30px;
-    line-height: 4;
+    line-height: 2;
     font-weight: 400;
     padding: 0;
-    margin-top: -35px; }
+     }
   nav.navbar.responsive ul.navbar-list li.nav-list-item.none {
     display: none; }
   nav.navbar.responsive ul.navbar-list li.top {
@@ -761,22 +778,22 @@ img {
       text-decoration: none;
       font-size: 18px;
       color: #fff;
-      font-weight: 400; }
+      font-weight: 700; }
 
   nav.navbar.responsive ul.navbar-list li.top.student {
-    margin-top: 40px; }
+     }
 
   .line {
     width: 130px;
     border-top: 2px solid #fff;
     margin-top: 20px;
-    position: absolute;
-    top: 180px; }
+    /* position: absolute; */
+     }
 
   .dropDown-content,
   .dropDown-content2 {
     position: relative;
-    background-color: #1599DE;
+    background-color: transparent;
     padding: 0;
     width: 170px;
     margin-left: -20px;
@@ -785,7 +802,7 @@ img {
     .dropDown-content2 a.filter {
       margin: 0;
       padding-left: 20px;
-      border-top: 2px solid #fff;
+      /* border-top: 2px solid #fff; */
       width: 150px; }
 
     .dropDown-content a.filter.obj,
@@ -914,7 +931,8 @@ img {
       display: none;
     }
     .others {
-      width: 100%;
+      width: 50%;
+      margin-bottom: 20px;
     }
 
     .saved {
@@ -937,6 +955,10 @@ img {
     border-top: 2px solid #fff;
     padding-top: 20px;
     margin-top: 20px;
+  }
+
+  button.pro {
+    cursor: pointer;
   }
 
 /*# sourceMappingURL=app.css.map */
