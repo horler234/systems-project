@@ -32,9 +32,14 @@ function showSlides(n) {
 function showsearch() {
   var input = document.getElementById('input');
   if (input.className === "search") {
-    input.className += " show"
-  } else {
-    input.className = "search"
+    input.className += " show";
+  } else if (input.className === "search show") {
+    input.className += " ram";
+  } else if (input.className === "search show ram") {
+    input.className = "search show";
+  }
+  else {
+    input.className = "search";
   }
 }
 
@@ -44,7 +49,12 @@ function toggleDropdown() {
     if (navbarToggle.className === 'navbar') {
         navbarToggle.className += ' responsive';
 
-    } else {
+    } else if (navbarToggle.className === 'navbar responsive') {
+      navbarToggle.className += ' ness';
+    } else if (navbarToggle.className === 'navbar responsive ness') {
+      navbarToggle.className = 'navbar responsive'
+    }
+    else {
         navbarToggle.className = 'navbar';
     }
 
@@ -53,8 +63,6 @@ function toggleDropdown() {
     } else {
       dropdown.className = 'menu-container';
     }
-
-
 }
 
 var coll = document.getElementsByClassName('drop-btn');
